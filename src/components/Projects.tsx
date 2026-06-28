@@ -3,13 +3,12 @@
 import Section from "@/components/Section";
 import { projects } from "@/data/projects";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
 export default function Projects() {
     return (
-        <Section id="projects">
+        <Section id="projects" contentWidth="max-w-6xl">
             <motion.h2
                 initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -33,21 +32,25 @@ export default function Projects() {
                         viewport={{ once: true }}
                         className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/50 transition-all duration-300 hover:-translate-y-2 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10"
                     >
-                        <div className="relative h-52 w-full">
-                            <Image
-                                src={project.image}
-                                alt={project.title}
-                                fill
-                                className="object-cover"
-                            />
+                        {/* Project Image */}
+                        <div className="px-4 pt-4">
+                            <div className="overflow-hidden rounded-xl border border-slate-800">
+                                <img
+                                    src={project.image}
+                                    alt={project.title}
+                                    className="aspect-[2/1] w-full object-cover object-top transition-transform duration-500 hover:scale-105"
+                                    loading="lazy"
+                                />
+                            </div>
                         </div>
 
-                        <div className="flex min-h-[340px] flex-col p-6">
+                        {/* Content */}
+                        <div className="flex flex-col p-6">
                             <h3 className="text-2xl font-semibold text-white">
                                 {project.title}
                             </h3>
 
-                            <p className="mt-4 flex-1 text-sm leading-7 text-slate-400">
+                            <p className="mt-4 text-sm leading-7 text-slate-400">
                                 {project.description}
                             </p>
 
@@ -67,7 +70,7 @@ export default function Projects() {
                                     href={project.github}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 rounded-lg border border-slate-700 px-4 py-2 text-sm text-slate-300 transition hover:border-sky-400 hover:text-white"
+                                    className="flex items-center gap-2 rounded-lg border border-slate-700 px-4 py-2 text-sm text-slate-300 transition-all duration-300 hover:border-sky-400 hover:text-white"
                                 >
                                     <FaGithub />
                                     GitHub
@@ -78,7 +81,7 @@ export default function Projects() {
                                         href={project.live}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center gap-2 rounded-lg bg-sky-500 px-4 py-2 text-sm font-medium text-white transition hover:bg-sky-400"
+                                        className="flex items-center gap-2 rounded-lg bg-sky-500 px-4 py-2 text-sm font-medium text-white transition-all duration-300 hover:bg-sky-400"
                                     >
                                         <FiExternalLink />
                                         Live

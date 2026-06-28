@@ -13,8 +13,8 @@ export const projects: Project[] = [
             "Lua",
             "sync/atomic",
         ],
-        github: "https://github.com/your-username/gatekeeper-go",
-        image: "/project-images/gatekeeper-go.png",
+        github: "https://github.com/Piyush-Lokhande07/gatekeeper-go",
+        image: "https://opengraph.githubassets.com/1/Piyush-Lokhande07/gatekeeper-go",
     },
     {
         title: "Distributed Job Queue System",
@@ -29,7 +29,7 @@ export const projects: Project[] = [
             "net/http",
         ],
         github: "https://github.com/your-username/distributed-job-queue",
-        image: "/project-images/job-queue.png",
+        image: "https://opengraph.githubassets.com/1/Piyush-Lokhande07/distributed-job-queue",
     },
     {
         title: "BP Guardian",
@@ -45,6 +45,23 @@ export const projects: Project[] = [
         ],
         github: "https://github.com/your-username/bp-guardian",
         live: "https://your-live-demo.com",
-        image: "/project-images/bp-guardian.png",
+        image: "https://opengraph.githubassets.com/1/Piyush-Lokhande07/BP_Guardian",
     },
+    {
+        title: "Smart Parking System",
+        description:
+            "An IoT-enabled smart parking platform that allows users to locate, reserve, and pay for parking slots online. Integrated with Arduino, NodeMCU, IR sensors, and servo motors for automated gate control, along with JWT authentication, PostgreSQL, and Razorpay for secure booking and payments.",
+        tech: [
+            "React",
+            "Node.js",
+            "Express.js",
+            "PostgreSQL",
+            "Arduino",
+            "NodeMCU",
+            "JWT",
+            "Razorpay",
+        ],
+        github: "https://github.com/Piyush-Lokhande07/smart-parking-system",
+        image: "https://opengraph.githubassets.com/1/Piyush-Lokhande07/smart-parking-system",
+      },
 ];

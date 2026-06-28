@@ -7,6 +7,7 @@ import { ReactNode } from "react";
 
 import { FaGithub, FaLinkedin, FaMapMarkerAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { HiMapPin } from "react-icons/hi2";
 import { HiOutlineDocumentArrowDown } from "react-icons/hi2";
 
 const icons: Record<string, ReactNode> = {

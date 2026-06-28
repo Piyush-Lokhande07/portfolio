@@ -11,19 +11,19 @@ export const profile: Profile = {
     socials: [
         {
             name: "GitHub",
-            href: "...",
+            href: "https://github.com/Piyush-Lokhande07",
         },
         {
             name: "LinkedIn",
-            href: "...",
+            href: "https://www.linkedin.com/in/piyush-lokhande-173477298/",
         },
         {
             name: "Email",
-            href: "...",
+            href: "mailto:piyushkailas77@gmail.com",
         },
         {
             name: "Resume",
-            href: "/resume.pdf",
+            href: "/cisco-fte.pdf",
         },
     ],
 };
