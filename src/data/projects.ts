@@ -28,7 +28,7 @@ export const projects: Project[] = [
             "Channels",
             "net/http",
         ],
-        github: "https://github.com/your-username/distributed-job-queue",
+        github: "https://github.com/Piyush-Lokhande07/distributed-job-queue",
         image: "https://opengraph.githubassets.com/1/Piyush-Lokhande07/distributed-job-queue",
     },
     {
@@ -43,8 +43,8 @@ export const projects: Project[] = [
             "Random Forest",
             "Gemini AI",
         ],
-        github: "https://github.com/your-username/bp-guardian",
-        live: "https://your-live-demo.com",
+        github: "https://github.com/Piyush-Lokhande07/BP_Guardian",
+        live: "https://bp-guardian-frontend.onrender.com/",
         image: "https://opengraph.githubassets.com/1/Piyush-Lokhande07/BP_Guardian",
     },
     {
