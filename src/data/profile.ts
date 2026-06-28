@@ -6,7 +6,7 @@ export const profile: Profile = {
     role: "Software Engineer",
 
     tagline:
-        "Computer Science undergraduate at NIT Raipur with a passion for building scalable backend systems, distributed applications, and modern full-stack web experiences.",
+        "Computer Science undergraduate at NIT Raipur specializing in distributed systems, concurrent backend architectures, and full-stack applications.",
 
     socials: [
         {

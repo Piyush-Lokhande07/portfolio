@@ -43,7 +43,7 @@ export default function Hero() {
                 </h2>
 
                 <div className="mt-3 flex items-center gap-2 text-slate-400">
-                    <FaMapMarkerAlt className="text-red-400" />
+                    <HiMapPin size={18} className="text-sky-400" />
                     <span>Maharashtra, India</span>
                 </div>
 
