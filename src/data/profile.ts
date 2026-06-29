@@ -23,7 +23,7 @@ export const profile: Profile = {
         },
         {
             name: "Resume",
-            href: "/cisco-fte.pdf",
+            href: "https://drive.google.com/file/d/16hq-Oo9spCCcC9haKB5Q3FplrfR6IRpL/view?usp=sharing",
         },
     ],
 };
