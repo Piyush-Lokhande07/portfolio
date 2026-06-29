@@ -4,7 +4,6 @@ import Section from "@/components/Section";
 import { competitiveProfiles } from "@/data/competitiveProgramming";
 import { motion } from "framer-motion";
 import { FiExternalLink } from "react-icons/fi";
-import CountUp from "react-countup";
 
 export default function CompetitiveProgramming() {
     return (
@@ -26,18 +25,18 @@ export default function CompetitiveProgramming() {
                     return (
                         <motion.div
                             key={profile.platform}
-                            initial={{ opacity: 0, y: 30 }}
+                            initial={{ opacity: 0, y: 25 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{
-                                duration: 0.5,
-                                delay: index * 0.12,
+                                duration: 0.45,
+                                delay: index * 0.1,
                             }}
                             viewport={{ once: true }}
                             className="rounded-2xl border border-slate-800 bg-slate-900/50 p-6 transition-all duration-300 hover:-translate-y-2 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10"
                         >
                             <div className="flex items-center gap-4">
                                 <Icon
-                                    size={36}
+                                    size={38}
                                     style={{ color: profile.color }}
                                 />
 
@@ -54,23 +53,12 @@ export default function CompetitiveProgramming() {
 
                             <div className="mt-8">
                                 <p className="text-xs uppercase tracking-[0.2em] text-slate-500">
-                                    Rating
+                                    Max Rating
                                 </p>
 
-                                <motion.div
-                                    initial={{ opacity: 0, scale: 0.9 }}
-                                    whileInView={{ opacity: 1, scale: 1 }}
-                                    transition={{ duration: 0.5 }}
-                                    viewport={{ once: true }}
-                                    className="mt-2"
-                                >
-                                    <span className="text-5xl font-extrabold text-white">
-                                        <CountUp
-                                            end={Number(profile.rating)}
-                                            duration={2}
-                                        />
-                                    </span>
-                                </motion.div>
+                                <h4 className="mt-2 text-5xl font-extrabold text-white">
+                                    {profile.rating}
+                                </h4>
 
                                 <p className="mt-4 text-slate-300">
                                     {profile.description}
@@ -81,7 +69,7 @@ export default function CompetitiveProgramming() {
                                 href={profile.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="mt-8 inline-flex items-center gap-2 text-sky-400 transition hover:text-sky-300"
+                                className="mt-8 inline-flex items-center gap-2 text-sky-400 transition-colors hover:text-sky-300"
                             >
                                 View Profile
                                 <FiExternalLink size={16} />
